@@ -6,35 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Report Form</title>
     <link rel="stylesheet" href="registerform.css">
+    <script src="script.js"></script>
 </head>
 <body>
-    <h1>Report Form</h1>
     <div class="container">
+        <h2>Report Form</h2>
+
         <form action="#">
-            <div class="input-box underline">
-                <input type="text" placeholder="Enter Your Country" required>
-                <div class="underline"></div>
-            </div>
-            <div class="input-box">
-                <input type="text" placeholder="Enter Your City" required>
-                <div class="underline"></div>
-            </div>
-            <div class="input-box">
-                <input type="text" placeholder="Enter Your Pincode" required>
-                <div class="underline"></div>
-            </div>
-            <div class="input-box">
-                <input type="text" placeholder="Enter Disaster" required>
-                <div class="underline"></div>
-            </div>
-            <div class="input-box">
-                <input type="text" placeholder="Describe the disaster" required>
-                <div class="underline"></div>
-            </div>
-            <div class="input-box button">
-                <input type="submit" name="" value="REPORT">
-            </div>
+            <select name="" id="country">
+                <option value="">Select Country</option>
+            </select>
+            <select name="" id="state">
+                <option value="">Select State</option>
+            </select>
+            <select name="" id="city">
+                <option value="">Select City</option>
+            </select>
+            <select name="" id="zip">
+                <option value="">Select Zip</option>
+                </select>
+                <input type="text" class="underline-input" placeholder="Enter disaster">
+                <input type="text" class="underline-input" placeholder="Describe the disaster">
+                <button type="submit" class="submit-button">Report</button>
         </form>
+
     </div>
     
 </body>
